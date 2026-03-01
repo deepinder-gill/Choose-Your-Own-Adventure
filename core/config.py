@@ -4,3 +4,4 @@ from pydantic import field_validator
 
 class Settings(BaseSettings):
     API_PREFIX: str = "/api/v1"
+
