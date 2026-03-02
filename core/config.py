@@ -14,6 +14,7 @@ class Settings(BaseSettings):
     OPEN_API_KEY: str = ""
 
     @field_validator("ALLOWED_ORIGINS")
+    @classmethod
     def allowed_origins_validator(cls, v: str) -> List[str]:
         return v.split(",") if v else []
 
