@@ -41,10 +41,10 @@ def create_story(
     db.commit()
 
     background_tasks.add_task(
-        generate_story_task(),
-        job_id=job_id,
-        theme=request.theme,
-        session_id=session_id
+        generate_story_task,
+        job_id,
+        request.theme,
+        session_id
     )
     return job
 
