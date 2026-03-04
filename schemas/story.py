@@ -36,3 +36,4 @@ class CompleteStoryResponse(StoryBase):
 
     class Config:
         from_attributes = True
+
